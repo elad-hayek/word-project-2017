@@ -2,7 +2,11 @@
 
 
 def main():
-    print 'kwsjfgbhskjwhdgfkusjhdgfikusdgfiuykshdgfukiysgufgug'
+    """
+    Add Documentation here
+    """
+    pass  # Add Your Code Here
+
 
 if __name__ == '__main__':
     main()
