@@ -1,7 +1,8 @@
 import socket_class
 
 ACTION_MENU = ''
-options = []
+options = ['save_doc', 'add_new_picture', 'add_new_table', 'write_to_table',
+           'add_new_paragraph', 'add_new_word', 'add_new_heading', 'add_new_page_break', 'email_doc']
 
 
 class Client:
