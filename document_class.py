@@ -25,6 +25,9 @@ class Documents(Document):
     def add_new_word(self, text, style, color):
         pass
 
+    def import_existing_doc(self, path):
+        pass
+
     def add_new_heading(self, text, style, color):
         pass
 
