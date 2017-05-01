@@ -2,14 +2,16 @@
 from docx import Document
 
 
-class Documents(Document):
-    def __init__(self):
-        self.document__ = super(Documents, self).__init__()
+class Documents():
+    def __init__(self, path=''):
+        #super(Documents, self).__init__(path)
+        self.__path = path
+        self.__document = Document()
 
 
     def save_doc(self, args_list):
         path = args_list[0]
-        self.document__save(path)
+        self.__document.save(path)
 
     def add_new_picture(self, args_list):
         width = args_list[0]
@@ -38,7 +40,7 @@ class Documents(Document):
         text = args_list[0]
         style = args_list[1]
         color = args_list[2]
-        pass
+        return self
 
     def import_existing_doc(self, args_list):
         path = args_list[0]
