@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import socket
+from socket import socket
 
 class Sockets(socket):
     def __init__(self):
@@ -11,7 +11,7 @@ class Sockets(socket):
     def write_to_server(self, data):
         self.send(data)
 
-    def write_to_client(self,data,  client_socket):
+    def write_to_client(self, data,  client_socket):
         client_socket.send(data)
 
     def read_from_server(self):

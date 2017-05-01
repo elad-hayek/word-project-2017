@@ -25,9 +25,9 @@ class Server:
         print 'starting server'
 
     def action_activation(self, action, arguments):
-        #doing the actions
-        actions[action](self.document__, text, style, color)
-        pass
+        arguments = arguments[1:].split(',')
+        actions[action](self.document__, arguments)
+
 
 
     def get_arguments(self, client_socket):
@@ -41,12 +41,11 @@ class Server:
         self.check_action(action, client_socket)
 
     def check_action(self, action, client_socket):
-        arguments = ''
         if action in options:
             if action == options[0]:
                 arguments = self.get_arguments(client_socket)
                 self.import_docx_file(arguments)
-            if action in options[4:]:
+            else:
                 arguments = self.get_arguments(client_socket)
             self.action_activation(action, arguments)
 
@@ -55,3 +54,10 @@ class Server:
     def import_docx_file(self, path):
         self.document__ = Documents(path)
 
+
+def main():
+    my_server = Server('0.0.0.0', 8820)
+    my_server.action_manager()
+
+if __name__ == main():
+    main()
