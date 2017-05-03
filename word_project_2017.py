@@ -25,14 +25,16 @@ docx_methods_sql_values = [
            "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG) \
       VALUES ('add_new_page_break', 0, null, null, null, null, null )",
             "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG) \
-      VALUES ('email_doc', 2, 'from_email', 'to_email', null, null, null )"]
+      VALUES ('email_doc', 2, 'from_email', 'to_email', null, null, null )",
+             "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG) \
+      VALUES ('import_existing_doc', 1, 'path', null, null, null, null )"]
 
 def main():
     conn = sqlite3.connect(DOCX_SQL_FILE_NAME)
-    # conn.execute(CREATE_TABLE)
-    # for new_insert in docx_methods_sql_values:
-    #     conn.execute(new_insert)
-    # conn.commit()
+    conn.execute(CREATE_TABLE)
+    for new_insert in docx_methods_sql_values:
+        conn.execute(new_insert)
+    conn.commit()
     cursor = conn.execute("SELECT name, args_number, first_arg, second_arg, third_arg, fourth_arg, fifth_arg from DOCX_METHODS ")
     for row in cursor:
         print "NAME = ", row[0]

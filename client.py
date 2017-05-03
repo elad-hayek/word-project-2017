@@ -22,6 +22,8 @@ class Client:
             action = raw_input('enter action: ')
             if action in options:
                 self.client_socket__.write_to_server(action)
+                if action == options[9]:
+                    continue
                 print self.client_socket__.read_from_server()   #argument requst
                 if action == options[1]:
                     self.client_socket__.close()
@@ -32,9 +34,7 @@ class Client:
 
                 args_for_client = ''
                 for raw in arg_len_cursor:
-                    print raw[0], 'how many'
                     for i in range(raw[0]):
-                        print "SELECT %s FROM DOCX_METHODS WHERE name = '%s'" % (args_from_sql[i], action)
                         arg_name_cursor = conn.execute("SELECT %s FROM DOCX_METHODS WHERE name = '%s'" % (args_from_sql[i], action))
                         for inside_raw in arg_name_cursor:
                             arg = raw_input(ARGUMENT_SPECIFIC_REQUEST %inside_raw[0])
