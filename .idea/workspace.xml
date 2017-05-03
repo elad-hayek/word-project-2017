@@ -23,21 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="socket_class.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="socket_class.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/socket_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="680">
+            <state line="11" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.23076923" vertical-offset="46" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="client.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="19" selection-start="666" selection-end="666" vertical-scroll-proportion="0.23076923" vertical-offset="199" max-vertical-offset="1020">
+            <state line="47" column="11" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="1020">
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <marker date="1493749784051" expanded="true" signature="646:1962" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -46,7 +47,7 @@
       <file leaf-file-name="word_project_2017.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/word_project_2017.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="31" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="969">
+            <state line="21" column="73" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
               <folding>
                 <marker date="1493636222549" expanded="true" signature="2149:2562" placeholder="..." />
               </folding>
@@ -57,7 +58,7 @@
       <file leaf-file-name="docx_funcs.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docx_funcs.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
               <folding />
             </state>
           </provider>
@@ -66,7 +67,7 @@
       <file leaf-file-name="document_class.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/document_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="27" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1241">
+            <state line="53" column="17" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1241">
               <folding />
             </state>
           </provider>
@@ -75,9 +76,11 @@
       <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="30" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.0" vertical-offset="681" max-vertical-offset="1462">
+            <state line="6" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1462">
               <folding>
                 <element signature="e#24#43#0" expanded="true" />
+                <marker date="1493650547677" expanded="true" signature="890:2651" placeholder="..." />
+                <marker date="1493650547677" expanded="true" signature="2665:2790" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -472,6 +475,7 @@
         <state line="8" column="13" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="510">
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <marker date="1493749784051" expanded="true" signature="646:1962" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -488,6 +492,8 @@
         <state line="5" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1054">
           <folding>
             <element signature="e#24#43#0" expanded="true" />
+            <marker date="1493650547677" expanded="true" signature="890:2651" placeholder="..." />
+            <marker date="1493650547677" expanded="true" signature="2665:2790" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -513,6 +519,7 @@
         <state line="8" column="13" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="510">
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <marker date="1493749784051" expanded="true" signature="646:1962" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -529,6 +536,8 @@
         <state line="5" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1071">
           <folding>
             <element signature="e#24#43#0" expanded="true" />
+            <marker date="1493650547677" expanded="true" signature="890:2651" placeholder="..." />
+            <marker date="1493650547677" expanded="true" signature="2665:2790" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -554,6 +563,7 @@
         <state line="8" column="13" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="510">
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <marker date="1493749784051" expanded="true" signature="646:1962" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -570,6 +580,8 @@
         <state line="5" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1054">
           <folding>
             <element signature="e#24#43#0" expanded="true" />
+            <marker date="1493650547677" expanded="true" signature="890:2651" placeholder="..." />
+            <marker date="1493650547677" expanded="true" signature="2665:2790" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -595,6 +607,7 @@
         <state line="6" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="493">
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <marker date="1493749784051" expanded="true" signature="646:1962" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -611,6 +624,8 @@
         <state line="4" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="867">
           <folding>
             <element signature="e#24#43#0" expanded="true" />
+            <marker date="1493650547677" expanded="true" signature="890:2651" placeholder="..." />
+            <marker date="1493650547677" expanded="true" signature="2665:2790" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -627,6 +642,7 @@
         <state line="6" column="13" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="493">
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <marker date="1493749784051" expanded="true" signature="646:1962" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -643,6 +659,8 @@
         <state line="4" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="884">
           <folding>
             <element signature="e#24#43#0" expanded="true" />
+            <marker date="1493650547677" expanded="true" signature="890:2651" placeholder="..." />
+            <marker date="1493650547677" expanded="true" signature="2665:2790" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -675,38 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docx_funcs.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="611">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word_project_2017.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding>
-            <marker date="1493636222549" expanded="true" signature="2149:2562" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/document_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="27" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="30" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.0" vertical-offset="681" max-vertical-offset="1462">
-          <folding>
-            <element signature="e#24#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Heights/PortableApps/PortablePython2.7.6.1/App/Lib/socket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="169" column="0" selection-start="5583" selection-end="5583" vertical-scroll-proportion="0.33254716" vertical-offset="2681" max-vertical-offset="9792">
@@ -714,19 +700,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket_class.py">
+    <entry file="file://$PROJECT_DIR$/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="680">
+        <state line="47" column="11" selection-start="1975" selection-end="1975" vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="1020">
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1493749784051" expanded="true" signature="646:1962" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1462">
+          <folding>
+            <element signature="e#24#43#0" expanded="true" />
+            <marker date="1493650547677" expanded="true" signature="890:2651" placeholder="..." />
+            <marker date="1493650547677" expanded="true" signature="2665:2790" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="17" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1241">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.py">
+    <entry file="file://$PROJECT_DIR$/docx_funcs.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="666" selection-end="666" vertical-scroll-proportion="0.23076923" vertical-offset="199" max-vertical-offset="1020">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word_project_2017.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="73" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1493636222549" expanded="true" signature="2149:2562" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.23076923" vertical-offset="46" max-vertical-offset="680">
+          <folding />
         </state>
       </provider>
     </entry>

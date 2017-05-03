@@ -42,8 +42,8 @@ class Client:
                 print args_for_client
                 self.client_socket__.write_to_server(args_for_client)
 
-        else:
-            print 'write a real action'
+            else:
+                print 'write a real action'
 
 def main():
     my_client = Client('127.0.0.1', 8820)
