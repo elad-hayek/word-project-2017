@@ -6,7 +6,7 @@ DOCX_SQL_FILE_NAME = 'docx_funcs.sql'
 
 options = ['import_existing_doc', 'disconnect', 'save_doc', 'add_new_picture', 'add_new_table', 'write_to_table',
            'add_new_paragraph', 'add_new_word', 'add_new_heading', 'add_new_page_break', 'email_doc']
-args_from_sql = ['first_arg', 'second_arg', 'third_arg', 'fourth_arg', 'fifth_arg']
+args_from_sql = ['first_arg', 'second_arg', 'third_arg', 'fourth_arg', 'fifth_arg', 'sixth_arg']
 # args_for_client = ''
 ARGUMENT_SPECIFIC_REQUEST = 'ENTER %s: '
 

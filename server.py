@@ -7,11 +7,10 @@ DISCONNECT_MESSAGE = 'you have been seccefully disconnected'
 
 options = ['import_existing_doc', 'disconnect', 'save_doc', 'add_new_picture', 'add_new_table', 'write_to_table',
            'add_new_paragraph', 'add_new_word', 'add_new_heading', 'add_new_page_break', 'email_doc']
-actions = {
-    'AddNewWord': Documents.add_new_word, 'save_doc': Documents.save_doc,
+actions = { 'save_doc': Documents.save_doc,
     'add_new_picture': Documents.add_new_picture, 'add_new_table': Documents.add_new_table,
     'write_to_table': Documents.write_to_table, 'add_new_paragraph': Documents.add_new_paragraph,
-    'add_new_word': Documents.add_new_word, 'add_new_heading': Documents.add_new_heading,
+    'add_new_heading': Documents.add_new_heading,
     'add_new_page_break': Documents.add_new_page_break, 'email_doc': Documents.email_doc,
     'import_existing_doc': Documents.import_existing_doc
 }
@@ -29,7 +28,7 @@ class Server:
 
     def action_activation(self, action, arguments):
         arguments = arguments.split(',')
-        print action
+        print arguments
         actions[action](self.document__, arguments)
 
 
@@ -71,7 +70,6 @@ def main():
     my_server = Server('0.0.0.0', 8820)
     my_server.connect_to_client()
     while True:
-        print 'while trur'
         my_server.action_menager()
 
 if __name__ == main():
