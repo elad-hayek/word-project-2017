@@ -27,7 +27,6 @@ class Server:
 
     def get_arguments(self):
         #print 'getting arguments'
-        self.server_socket__.write_to_client(var_and_const.ARGUMENT_REQUST, self.__client_socket)
         arguments = self.server_socket__.read_from_client(self.__client_socket)
         return arguments
 

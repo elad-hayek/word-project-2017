@@ -9,23 +9,23 @@ FIRST_ARG TEXT, SECOND_ARG TEXT, THIRD_ARG TEXT, FOURTH_ARG TEXT, FIFTH_ARG TEXT
 
 docx_methods_sql_values = [
     "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
-      VALUES ('write to table', 6,'what_table(starts for 0)', 'row', 'column', 'text', null, null )",
+      VALUES ('write to table', 2,'cell index(row,column) *start with (0,0)','cell text', null, null, null, null )",
      "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
-      VALUES ('save doc', 2, 'path', 'name', null, null, null, null )",
+      VALUES ('save doc', 2, 'saving path', 'document name', null, null, null, null )",
       "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
-      VALUES ('add new picture',2,'path', 'width(in inches)',null, null, null, null )",
+      VALUES ('add new picture',2,'the path of the picture', 'width(in inches)(note that 1 inch=25.4mm)',null, null, null, null )",
        "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
-      VALUES ('add new table' ,2,'rows', 'lines', null, null, null, null )",
+      VALUES ('add new table' ,2,'number of rows', 'number of columns', null, null, null, null )",
         "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
-      VALUES ('add new paragraph', 5, 'text', 'style(bold, italic or none)', 'color(black, blue, green or red)', 'size', 'font_name', null )",
+      VALUES ('add new paragraph', 5, 'paragraph text', 'font style(N=none, B=bold, I=italic)', 'font color(B=black, b=blue, G=green, R=red)', 'font size(from 1 to 1638)', 'Word font name \ your own font name', null )",
           "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
-      VALUES ('add new heading' ,1 , 'text', null, null, null, null, null )",
+      VALUES ('add new heading' ,1 , 'heading text', null, null, null, null, null )",
            "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
       VALUES ('add new page break', 0, null, null, null, null, null, null )",
             "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
       VALUES ('email doc', 2, 'from_email', 'to_email', null, null, null, null )",
              "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
-      VALUES ('import existing_doc', 1, 'path', null, null, null, null, null )",
+      VALUES ('import existing doc', 1, 'document path', null, null, null, null, null )",
               "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
       VALUES ('return to last save', 0, null, null, null, null, null, null )",
                "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \

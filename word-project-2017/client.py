@@ -3,6 +3,7 @@ import sqlite3
 import var_and_const
 
 
+
 class Client:
     def __init__(self, ip, port):
         self.client_socket__ = socket_class.Sockets()
@@ -12,18 +13,23 @@ class Client:
     def menu_options(self):
         while True:
             print '\n'
-            action = raw_input(var_and_const.ACTION_MENU)
+            if var_and_const.first_time:
+                action = raw_input(var_and_const.ACTION_MENU)
+                var_and_const.first_time = False
+            else:
+                action = raw_input(var_and_const.MENU_VIEW_QUESTION)
+                if action == 'M':
+                    action = raw_input(var_and_const.ACTION_MENU)
             if 0 <= int(action) <= 11:
                 self.client_socket__.write_to_server(var_and_const.options[int(action)])
                 if int(action) == 8 or int(action) == 10 or int(action) == 11:
                     response_from_server = self.client_socket__.read_from_server()
                     print response_from_server
                     continue
-                print self.client_socket__.read_from_server()   #argument requst
+
                 if int(action) == 1:
                     self.client_socket__.close()
                     break
-
 
                 conn = sqlite3.connect(var_and_const.DOCX_SQL_FILE_NAME)
                 arg_len_cursor = conn.execute("SELECT args_number FROM DOCX_METHODS WHERE name =  '%s'" % var_and_const.options[int(action)])
