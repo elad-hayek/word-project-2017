@@ -20,7 +20,7 @@ ACTION_MENU = """PRESS THE NUMBER FOR THE DESIRED ACTION AND PRESS ENTER
 6 for adding a paragraph
 7 for adding a heading
 8 for adding a new page break
-9 for emailing the document
+9 for emailing the document *only with gmail
 10 for going back to last save
 11 for viewing the document(only text)
 action number: """

@@ -4,8 +4,8 @@ from docx.shared import Pt
 from docx.shared import RGBColor
 from docx.shared import Inches
 import os
-import subprocess
 import docx2txt
+import mail_sending
 
 RED = '\033[91m'   # red
 GREEN = '\033[92m'  #green
@@ -20,7 +20,8 @@ error_messages = {
     'add new paragraph': ((RED + 'ERROR: there is no such color, action terminated' + END),
                           (RED + 'ERROR: there is not such style, action terminated' + END)),
     'import existing doc': (RED + 'ERROR: path does not exist, action terminated' + END),
-    'return to last save': (RED + 'WARNING: your document was not previously saved, action terminated' + END)}
+    'return to last save': (RED + 'WARNING: your document was not previously saved, action terminated' + END),
+    'email doc': (RED + 'ERROR: your document was not previously saved, action terminated' + END)}
 confirm_messages = {
     'save doc': (GREEN + 'document saved successfully' + END),
     'add new picture': (GREEN + 'picture added successfully' + END),
@@ -30,7 +31,8 @@ confirm_messages = {
     'import existing doc': (GREEN + 'successfully imported a document' + END),
     'add new heading': (GREEN + 'heading added successfully' + END),
     'add new page break': (GREEN + 'new page break added successfully' + END),
-    'return to last save': (GREEN + 'WARNING: your document was not previously saved, action terminated' + END)}
+    'return to last save': (GREEN + 'WARNING: your document was not previously saved, action terminated' + END),
+    'email doc': (GREEN + 'your email has been sent' + END)}
 
 colors = {'R': (0xff, 0x0, 0x0), 'G': (0x0, 0xff, 0x0), 'b': (0x0, 0x0, 0xff), 'B': (0x0, 0x0, 0x0)} #red, green, blue, black
 
@@ -46,6 +48,7 @@ class Documents():
         self.__document = Document()
         self.__document.save('beta.docx')
         self.__table = None
+        self.__name = ''
 
 
     def save_doc(self, args_list):
@@ -58,6 +61,7 @@ class Documents():
         print path
         self.__document.save(path + '\\' + name + '.docx')
         os.remove('beta.docx')
+        self.__name = name
         return confirm_messages['save doc']
 
 
@@ -152,9 +156,14 @@ class Documents():
 
 
     def email_doc(self, args_list):
+        if os.path.exists('beta.docx'):
+            return error_messages['email doc']
         from_email = args_list[0]
-        to_email = args_list[1]
-        pass
+        password = args_list[1]
+        to_email = args_list[2]
+        mail_sending.send(from_email, password, to_email, self.__path, self.__name)
+        return confirm_messages['email doc']
+
 
 
 

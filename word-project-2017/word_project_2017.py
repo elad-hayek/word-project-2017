@@ -23,7 +23,7 @@ docx_methods_sql_values = [
            "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
       VALUES ('add new page break', 0, null, null, null, null, null, null )",
             "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
-      VALUES ('email doc', 2, 'from_email', 'to_email', null, null, null, null )",
+      VALUES ('email doc', 3, 'your email', 'your password','recipient email', null, null, null )",
              "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \
       VALUES ('import existing doc', 1, 'document path', null, null, null, null, null )",
               "INSERT INTO DOCX_METHODS (NAME,ARGS_NUMBER,FIRST_ARG,SECOND_ARG,THIRD_ARG, FOURTH_ARG, FIFTH_ARG, SIXTH_ARG) \

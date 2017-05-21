@@ -52,8 +52,6 @@ class Server:
     def check_action(self, action):
         if action == var_and_const.options[8]:
             self.action_activation(action, '')
-        elif action == var_and_const.options[9]:
-            self.action_activation(action, '')
         elif action == var_and_const.options[10]:
             self.action_activation(action, '')
         elif action == var_and_const.options[11]:
