@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from socket import socket
+import pickle
 
 class Sockets(socket):
     def __init__(self):
@@ -16,6 +17,7 @@ class Sockets(socket):
 
     def read_from_server(self):
         data = self.recv(1024)
+        data = pickle.loads(data)
         return data
 
     def read_from_client(self, client_socket):

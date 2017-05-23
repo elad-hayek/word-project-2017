@@ -6,33 +6,31 @@ from docx.shared import Inches
 import os
 import docx2txt
 import mail_sending
-
-RED = '\033[31m'   # red
-GREEN = '\033[92m'  #green
-END = '\033[0m'    # reset
+from colorama import Fore
 
 error_messages = {
-    'save doc': (RED + 'ERROR: path does not exist, action terminated' + END),
-    'add new picture': (RED + 'ERROR: path does not exist, action terminated' + END),
-    'write to table': ((RED + 'ERROR: there is no such row number, action terminated' + END),
-                      (RED + 'ERROR: there is no such column number, action terminated' + END),
-                      (RED + 'ERROR: there is no table to edit, action terminated' + END)),
-    'add new paragraph': ((RED + 'ERROR: there is no such color, action terminated' + END),
-                          (RED + 'ERROR: there is not such style, action terminated' + END)),
-    'import existing doc': (RED + 'ERROR: path does not exist, action terminated' + END),
-    'return to last save': (RED + 'WARNING: your document was not previously saved, action terminated' + END),
-    'email doc': (RED + 'ERROR: your document was not previously saved, action terminated' + END)}
+    'save doc': (Fore.LIGHTRED_EX, 'ERROR: path does not exist, action terminated'),
+    'add new picture': (Fore.LIGHTRED_EX, 'ERROR: path does not exist, action terminated'),
+    'write to table': ((Fore.LIGHTRED_EX, 'ERROR: there is no such row number, action terminated'),
+                      (Fore.LIGHTRED_EX, 'ERROR: there is no such column number, action terminated'),
+                      (Fore.LIGHTRED_EX, 'ERROR: there is no table to edit, action terminated')),
+    'add new paragraph': ((Fore.LIGHTRED_EX, 'ERROR: there is no such color, action terminated'),
+                          (Fore.LIGHTRED_EX, 'ERROR: there is not such style, action terminated')),
+    'import existing doc': (Fore.LIGHTRED_EX, 'ERROR: path does not exist, action terminated'),
+    'return to last save': (Fore.LIGHTRED_EX, 'WARNING: your document was not previously saved, action terminated'),
+    'email doc': (Fore.LIGHTRED_EX, 'ERROR: your document was not previously saved, action terminated')}
+
 confirm_messages = {
-    'save doc': (GREEN + 'document saved successfully' + END),
-    'add new picture': (GREEN + 'picture added successfully' + END),
-    'add new table': (GREEN + 'table added successfully' + END),
-    'write to table': (GREEN + 'successfully writen to the table' + END),
-    'add new paragraph': (GREEN +  'paragraph added successfully' + END),
-    'import existing doc': (GREEN + 'successfully imported a document' + END),
-    'add new heading': (GREEN + 'heading added successfully' + END),
-    'add new page break': (GREEN + 'new page break added successfully' + END),
-    'return to last save': (GREEN + 'WARNING: your document was not previously saved, action terminated' + END),
-    'email doc': (GREEN + 'your email has been sent' + END)}
+    'save doc': (Fore.LIGHTGREEN_EX, 'document saved successfully'),
+    'add new picture': (Fore.LIGHTGREEN_EX, 'picture added successfully'),
+    'add new table': (Fore.LIGHTGREEN_EX, 'table added successfully'),
+    'write to table': (Fore.LIGHTGREEN_EX, 'successfully writen to the table'),
+    'add new paragraph': (Fore.LIGHTGREEN_EX,  'paragraph added successfully'),
+    'import existing doc': (Fore.LIGHTGREEN_EX, 'successfully imported a document'),
+    'add new heading': (Fore.LIGHTGREEN_EX, 'heading added successfully'),
+    'add new page break': (Fore.LIGHTGREEN_EX, 'new page break added successfully'),
+    'return to last save': (Fore.LIGHTGREEN_EX, 'WARNING: your document was not previously saved, action terminated'),
+    'email doc': (Fore.LIGHTGREEN_EX, 'your email has been sent')}
 
 colors = {'R': (0xff, 0x0, 0x0), 'G': (0x0, 0xff, 0x0), 'b': (0x0, 0x0, 0xff), 'B': (0x0, 0x0, 0x0)} #red, green, blue, black
 
@@ -147,12 +145,14 @@ class Documents():
         return confirm_messages['return to last save']
 
     def live_docx(self, args_list):
+        # todo: call windocx.exe <path to file>
+
         if os.path.exists('beta.docx'):
             self.__document.save('beta.docx')
             live_view = docx2txt.process('beta.docx')
         else:
             live_view = docx2txt.process(self.__path)
-        return GREEN + 'THIS IS YOUR FILE TEXT:\n'+str(live_view)+'\n'+END
+        return Fore.LIGHTGREEN_EX, 'THIS IS YOUR FILE TEXT:\n'+str(live_view)+'\n'
 
 
     def email_doc(self, args_list):

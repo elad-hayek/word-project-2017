@@ -3,6 +3,8 @@ import socket_class
 from document_class import Documents
 import var_and_const
 import os
+from colorama import init
+import pickle
 
 
 
@@ -21,9 +23,8 @@ class Server:
         arguments = arguments.split(',')
         print arguments
         response = var_and_const.actions[action](self.document__, arguments)
+        response = pickle.dumps(response)
         self.server_socket__.write_to_client(response, self.__client_socket)
-
-
 
     def get_arguments(self):
         #print 'getting arguments'
@@ -73,4 +74,5 @@ def main():
         print 'EXCEPTION: %s' % (ex, )
 
 if __name__ == main():
+    init(autoreset=True)
     main()

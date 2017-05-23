@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
 from document_class import Documents
+from colorama import Fore
 
 #both server and client vars and consts
 options = ['import existing doc', 'disconnect', 'save doc', 'add new picture', 'add new table', 'write to table',
            'add new paragraph', 'add new heading', 'add new page break', 'email doc', 'return to last save', 'live docx']
+
+RED = Fore.LIGHTRED_EX
 
 #clients consts and vars
 args_from_sql = ['first_arg', 'second_arg', 'third_arg', 'fourth_arg', 'fifth_arg', 'sixth_arg']
 action = ''
 first_time = True
 action_numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11']
-
-RED = '\033[31m'
-END = '\033[0m'
+# action_numbers = map(str, range(12))
 
 ARGUMENT_SPECIFIC_REQUEST = 'ENTER %s: '
 ACTION_MENU = """PRESS THE NUMBER FOR THE DESIRED ACTION AND PRESS ENTER
@@ -31,7 +32,7 @@ ACTION_MENU = """PRESS THE NUMBER FOR THE DESIRED ACTION AND PRESS ENTER
 action number: """
 MENU_VIEW_QUESTION = 'FOR VIEWING THE MENU PRESS M \ ENTER THE ACTION NUMBER: '
 DOCX_SQL_FILE_NAME = 'docx_funcs.sql'
-INPUT_ERROR_MESSAGE = RED + 'ERROR: enter a valid input' + END
+INPUT_ERROR_MESSAGE = RED + 'ERROR: enter a valid input'
 
 
 #server vars and consts

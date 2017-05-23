@@ -1,8 +1,7 @@
 import socket_class
 import sqlite3
 import var_and_const
-
-
+from colorama import init
 
 class Client:
     def __init__(self, ip, port):
@@ -37,8 +36,8 @@ class Client:
                             arg = raw_input(var_and_const.ARGUMENT_SPECIFIC_REQUEST %inside_raw[0])
                             args_for_client += arg+','
                 self.client_socket__.write_to_server(args_for_client)
-                response_from_server = self.client_socket__.read_from_server()
-                print response_from_server
+                color, response_from_server = self.client_socket__.read_from_server()
+                print color + response_from_server
             else:
                 continue
 
@@ -86,6 +85,7 @@ def main():
     except Exception, ex:
         print 'EXCEPTION: %s' % (ex, )
 
-if __name__ == main():
+if __name__ == '__main__':
+    init(autoreset=True)
     main()
 
